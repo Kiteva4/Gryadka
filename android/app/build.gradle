@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.gryadka.kiteva"
+        applicationId "com.gryadka"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
