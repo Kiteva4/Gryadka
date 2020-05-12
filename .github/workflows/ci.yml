@@ -48,8 +48,9 @@ jobs:
           name: apk-release
           path: android/app/build/outputs/apk/release/
   build-ios:
+    name: Build IOS
     needs: install-and-test
-    runs-on: [self-hosted]
+    runs-on: macOS-latest
     steps: 
       - uses: actions/checkout@v2
       - name: Install npm dependencies
@@ -62,7 +63,8 @@ jobs:
         run: |       
           xcodebuild -workspace ios/Gryadka.xcworkspace -scheme Gryadka archive -archivePath Gryadka.xcarchive -allowProvisioningUpdates
           xcodebuild -exportArchive -archivePath ./Gryadka.xcarchive -exportPath . -exportOptionsPlist ios/Gryadka/Info.plist
-          mv Gryadka.ipa ../Gryadka.ipa
+          mkdir ios/build/
+          mv Gryadka.ipa ios/build
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
