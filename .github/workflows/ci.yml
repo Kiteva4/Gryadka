@@ -60,11 +60,11 @@ jobs:
           cd ios && pod install
       - name: Build app
         run: |       
-          xcodebuild -workspace myapp.xcworkspace -scheme myapp archive -archivePath myapp.xcarchive -allowProvisioningUpdates
-          xcodebuild -exportArchive -archivePath ./myapp.xcarchive -exportPath . -exportOptionsPlist myapp/Info.plist
-          mv myapp.ipa ../myapp.ipa
+          xcodebuild -workspace Gryadka.xcworkspace -scheme Gryadka archive -archivePath Gryadka.xcarchive -allowProvisioningUpdates
+          xcodebuild -exportArchive -archivePath ./Gryadka.xcarchive -exportPath . -exportOptionsPlist Gryadka/Info.plist
+          mv Gryadka.ipa ../Gryadka.ipa
       - name: Upload Artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
-          name: myapp.ipa
+          name: Gryadka.ipa
           path: ios/build/
