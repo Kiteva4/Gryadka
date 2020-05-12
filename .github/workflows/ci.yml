@@ -1,10 +1,13 @@
-name: Greet Everyone
+name: Build Android and Ios
 # This workflow is triggered on pushes to the repository.
-on: [push]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
   install-and-test:
-    # Job name is Greeting
+    # Job name is Install and test
     name: Install and test
     # This job runs on Linux
     runs-on: ubuntu-latest
@@ -15,18 +18,22 @@ jobs:
         run: npm install
       - name: Run tests
         run: echo 'Test'
-  job_2:
-    # Job name is Greeting
-    name: Greeting from job_2
+  build_android:
+    # Job name is Build Android
+    name: Build Android
+    needs: install-and-test
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
-      - name: Hello world
-        uses: actions/hello-world-javascript-action@v1
+      - name: Install npm dependencies
+        run: npm install
+      - name: Build Android Release
+        run: |
+          cd android && ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}'
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1
         with:
-          who-to-greet: 'Mona the Octocat'
-        id: hello
-      # This step prints an output (time) from the previous step's action.
-      - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+          name: app-release.apk
+          path: android/app/build/outputs/apk/release/
