@@ -44,8 +44,8 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
       - name: Log path of signed release file
         run: echo $SIGNED_RELEASE_FILE
-#       - name: Upload Artifact
-#         uses: actions/upload-artifact@v1
-#         with:
-#           name: ${{ SIGNED_RELEASE_FILE }}
-#           path: android/app/build/outputs/apk/release/
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: apk-release.apk
+          path: ${SIGNED_RELEASE_FILE}
