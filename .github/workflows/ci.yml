@@ -18,38 +18,38 @@ jobs:
         run: npm install
       - name: Run tests
         run: echo 'Test'
-  build-android:
-    # Job name is 'Build Android'
-    name: Build Android
-    needs: install-and-test
-    # This job runs on Linux
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
-      - name: Install npm dependencies
-        run: npm install
-      - name: Build project with Gradle
-        run: ./android/gradlew build
-      - name: Build Release APK with Gradle
-        run: cd android && ./gradlew assembleRelease
-      # This step uses GitHub's Sign Android Action https://github.com/marketplace/actions/sign-android-release
-      - name: Signing APK
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: ./android/app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: apk-release
-          path: android/app/build/outputs/apk/release/
+#   build-android:
+#     # Job name is 'Build Android'
+#     name: Build Android
+#     needs: install-and-test
+#     # This job runs on Linux
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
+#       - name: Install npm dependencies
+#         run: npm install
+#       - name: Build project with Gradle
+#         run: ./android/gradlew build
+#       - name: Build Release APK with Gradle
+#         run: cd android && ./gradlew assembleRelease
+#       # This step uses GitHub's Sign Android Action https://github.com/marketplace/actions/sign-android-release
+#       - name: Signing APK
+#         uses: r0adkll/sign-android-release@v1
+#         with:
+#           releaseDirectory: ./android/app/build/outputs/apk/release
+#           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+#           alias: ${{ secrets.ALIAS }}
+#           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+#           keyPassword: ${{ secrets.KEY_PASSWORD }}
+#       - name: Upload Artifact
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: apk-release
+#           path: android/app/build/outputs/apk/release/
   build-ios:
     needs: install-and-test
-    runs-on: [self-hosted, macos]
+    runs-on: macOS-latest
     steps: 
       - uses: actions/checkout@v2
       - name: Install npm dependencies
