@@ -61,7 +61,7 @@ jobs:
       - name: Build app
         run: |       
           xcodebuild -workspace ios/Gryadka.xcworkspace -scheme Gryadka archive -archivePath Gryadka.xcarchive -allowProvisioningUpdates
-          xcodebuild -exportArchive -archivePath ./Gryadka.xcarchive -exportPath . -exportOptionsPlist Gryadka/Info.plist
+          xcodebuild -exportArchive -archivePath ./Gryadka.xcarchive -exportPath . -exportOptionsPlist ios/Gryadka/Info.plist
           mv Gryadka.ipa ../Gryadka.ipa
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
