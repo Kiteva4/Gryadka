@@ -47,5 +47,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
-          name: app-release.apk
-          path: ${{ SIGNED_RELEASE_FILE }}
+          name: ${{ SIGNED_RELEASE_FILE }}
+          path: android/app/build/outputs/apk/release/
