@@ -31,14 +31,7 @@ jobs:
         run: npm install
       - name: Build Android Release
         run: |
-          cd android && ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}'
-  sign-android:
-    # Job name is 'Sign Android APK file to release'
-    name: Sign Android APK file to release
-    needs: build-android
-    # This job runs on Linux
-    runs-on: ubuntu-latest
-    steps:
+          cd android && ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEY_STORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEY_STORE_PASSWORD }}'
       # This step uses GitHub's Sign Android Action https://github.com/marketplace/actions/sign-android-release
       - uses: r0adkll/sign-android-release@v1
         with:
