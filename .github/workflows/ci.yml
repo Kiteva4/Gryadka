@@ -42,15 +42,10 @@ jobs:
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
-      - name: path of signed release file
+      - name: Log path of signed release file
         run: echo $SIGNED_RELEASE_FILE
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
           name: app-release.apk
-          path: ${{ SIGNED_RELEASE_FILE}}
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: app-release.apk
-          path: ${{ SIGNED_RELEASE_FILE}}
+          path: ${{ SIGNED_RELEASE_FILE }}
