@@ -31,7 +31,7 @@ jobs:
         run: npm install
       - name: Build Android Release
         run: |
-          cd android && ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEY_STORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEY_STORE_PASSWORD }}'
+          cd android && ./gradlew assembleRelease
       # This step uses GitHub's Sign Android Action https://github.com/marketplace/actions/sign-android-release
       - uses: r0adkll/sign-android-release@v1
         with:
