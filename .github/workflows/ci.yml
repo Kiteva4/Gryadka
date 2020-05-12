@@ -7,7 +7,7 @@ on:
 
 jobs:
   install-and-test:
-    # Job name is Install and test
+    # Job name 'is Install and test'
     name: Install and test
     # This job runs on Linux
     runs-on: ubuntu-latest
@@ -18,8 +18,8 @@ jobs:
         run: npm install
       - name: Run tests
         run: echo 'Test'
-  build_android:
-    # Job name is Build Android
+  build-android:
+    # Job name is 'Build Android'
     name: Build Android
     needs: install-and-test
     # This job runs on Linux
@@ -32,8 +32,23 @@ jobs:
       - name: Build Android Release
         run: |
           cd android && ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}'
+  sign-android:
+    # Job name is 'Sign Android APK file to release'
+    name: Sign Android APK file to release
+    needs: build-android
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      # This step uses GitHub's Sign Android Action https://github.com/marketplace/actions/sign-android-release
+      - uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
           name: app-release.apk
-          path: android/app/build/outputs/apk/release/
+          path: SIGNED_RELEASE_FILE
