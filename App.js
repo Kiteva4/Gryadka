@@ -26,3 +26,8 @@ export default class App extends React.Component {
     );
   }
 }
+
+
+/*
+watchman watch-del-all && rm -rf tmp/haste-map-react-native-packager && rm -rf node_modules && yarn && npm start --reset-cache
+*/
