@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import SplashScreen from 'react-native-splash-screen';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import TabMainScreen from './src/Screens/TabMainScreen'
@@ -9,6 +9,11 @@ import SignInScreen from './src/Screens/SignInScreen'
 const Stack = createStackNavigator();
 
 export default class App extends React.Component {
+  
+  componentDidMount() {
+    SplashScreen.hide()
+  }
+
   render() {
     return (
       <NavigationContainer>
