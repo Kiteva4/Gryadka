@@ -2,6 +2,8 @@ import * as React from 'react'
 import {View, Text, FlatList, StatusBar, ScrollView} from 'react-native'
 import { styles } from '../../../Styles';
 
+import SearchBar from 'react-native-search-bar';
+
 import requests from '../../Data/RequestsList.json'
 import RequestRow from '../../Components/RequestRow'
 
@@ -22,6 +24,14 @@ export default class SearchListScreen extends React.Component {
     render(){
         return(
         <View style = {styles.search_screen_container}>
+            <StatusBar barStyle='dark-content'/>
+            <SearchBar
+                ref="searchBar"
+                placeholder="Search"
+                barTintColor="white"
+                showsCancelButton={false}
+                //hideBackground={true}
+            />
             <FlatList
                 renderItem={this.renderItem}
                 data={array}
