@@ -1,12 +1,12 @@
 import * as React from 'react'
-import {Text, View} from 'react-native'
+import {Text, View, StatusBar} from 'react-native'
 import { styles } from '../../../Styles';
 
-export default class OfferListScreen extends React.Component{
+export default class OffersListScreen extends React.Component{
     render(){
         return(
             <View style={styles.main_screen_container}>
-                <Text>OfferList</Text>
+                <StatusBar barStyle='dark-content'/>
             </View>
         );
     }

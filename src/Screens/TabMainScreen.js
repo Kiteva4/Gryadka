@@ -1,10 +1,9 @@
 import * as React from 'react';
-
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import SearchListScreen from './TabScreens/SearchListScreen'
-import OfferListScreen from './TabScreens/OfferListScreen'
+import OffersListScreen from './TabScreens/OffersListScreen'
 import InProgressListScreen from './TabScreens/InProgressListScreen'
 import SettingsScreen from './TabScreens/SettingsScreen'
 import ProfileScreen from './TabScreens/ProfileScreen'
@@ -31,20 +30,20 @@ export default class TabMainScreen extends React.Component {
                             <MaterialCommunityIcons
                                 name="magnify"
                                 color={color}
-                                size={26}
+                                size={28}
                             />),
                     }}
                 />
                 <Tab.Screen
                     name="Предложения"
-                    component={OfferListScreen}
+                    component={OffersListScreen}
                     options={{
                         tabBarLabel: 'Предложения',
                         tabBarIcon: ({ color }) => (
                             <MaterialCommunityIcons
                                 name="email"
                                 color={color}
-                                size={26}
+                                size={28}
                             />
                         ),
                     }}
@@ -58,7 +57,7 @@ export default class TabMainScreen extends React.Component {
                             <MaterialCommunityIcons
                                 name="briefcase"
                                 color={color}
-                                size={26}
+                                size={28}
                             />),
                     }}
                 />
@@ -71,7 +70,7 @@ export default class TabMainScreen extends React.Component {
                             <MaterialCommunityIcons
                                 name="map"
                                 color={color}
-                                size={26}
+                                size={28}
                             />),
                     }}
                 />
@@ -84,7 +83,7 @@ export default class TabMainScreen extends React.Component {
                             <MaterialCommunityIcons
                                 name="account"
                                 color={color}
-                                size={26}
+                                size={28}
                             />),
                     }}
                 />

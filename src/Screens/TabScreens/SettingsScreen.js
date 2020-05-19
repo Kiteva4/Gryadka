@@ -1,11 +1,12 @@
 import React from 'react';
 import MapView from 'react-native-maps';
-import { StyleSheet, View} from 'react-native';
+import { StyleSheet, View, StatusBar} from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle='dark-content'/>
         <MapView style={styles.mapStyle} />
       </View>
     );

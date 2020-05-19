@@ -11,5 +11,6 @@
         android:layout_height="128dp"
         android:layout_marginTop="24dp"
         android:contentDescription="Splash_icon"
-        android:src="@mipmap/splash_icon" />
+        android:src="@mipmap/splash_icon" 
+    />
 </LinearLayout>

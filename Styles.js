@@ -5,9 +5,22 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'steelblue'
+        backgroundColor: 'skyblue'
+        
     },
-    splash_screen_container: {
-        backgroundColor: 'darkblue'
-    }
+    search_screen_container: {
+        flex: 1,
+        alignItems: "stretch",
+        justifyContent: 'center',
+        backgroundColor: 'skyblue'
+        
+    },
+    requestRow: {
+        flex: 1, 
+        alignItems:"center",
+        justifyContent: 'center',
+        backgroundColor: "lightsteelblue",
+        margin: 5,
+        flexDirection: 'column',
+    },
 })

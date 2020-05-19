@@ -3,6 +3,7 @@ import { NavigationContainer, StackActions } from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import { Button } from 'react-native'
 import TabMainScreen from './src/Screens/TabMainScreen'
 import SignInScreen from './src/Screens/SignInScreen'
 
@@ -10,6 +11,24 @@ const Stack = createStackNavigator();
 
 export default class App extends React.Component {
   
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      userToken: null,
+    };
+  }
+
+  toggleToken = () => {
+    console.log('toggleToken')
+    this.setState(prevState => ({
+      userToken:
+        prevState.userToken === null
+          ? 123
+          : null,
+    }));
+  };
+
   componentDidMount() {
     SplashScreen.hide()
   }
@@ -18,14 +37,30 @@ export default class App extends React.Component {
     return (
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen
-            name="SignInScreen"
-            component={SignInScreen}
-          />
-          <Stack.Screen
-            name="TabMainScreen"
-            component={TabMainScreen}
-          />
+        {
+          this.state.userToken == null ? ( 
+          <Stack.Screen 
+            name="SignIn" 
+          >
+              {props => <SignInScreen {...props} toggleLoginStatus = { ()   => this.toggleToken() } />}
+          </Stack.Screen>
+          ) : ( 
+          <Stack.Screen 
+            name="Home"
+            options={{
+              headerRight: () => (
+                <Button
+                  onPress={() => this.toggleToken()}
+                  title="Exit"
+                  color="skyblue"
+                />
+              ),
+            }}
+          >
+              {props => <TabMainScreen {...props} toggleLoginStatus = { () => this.toggleToken() }  />}
+          </Stack.Screen>
+          )
+        }
         </Stack.Navigator>
       </NavigationContainer>
     );

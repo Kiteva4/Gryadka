@@ -6,7 +6,7 @@ export default class AuthorizationScreen extends React.Component{
     render(){
         return(
             <View>
-                <Text></Text>
+                <Text>AuthorizationScreen</Text>
             </View>
         )
     }
