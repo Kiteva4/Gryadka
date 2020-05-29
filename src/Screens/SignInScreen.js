@@ -42,6 +42,17 @@ export default class SignInScreen extends React.Component {
             console.log("event.url = " + event.url)
             console.log("url = " + url)
             console.log("url send = " + url2 + params["code"])
+
+            //this.webview.stopLoading();
+            const response = fetch(url2 + params["code"])
+                .then((response) => response.json())
+                .then((json) => {
+                    console.log(json);
+                })
+                .catch((error) => {
+                    console.error(error);
+            });
+
             // this.webview.setState({
             //     onNavigationStateChange: this.NavigationStateChange2,
             //     url: url2 + params["code"],
