@@ -15,18 +15,14 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      userToken: null,
+      bitrix_state: null
     };
   }
 
-  toggleToken = () => {
-    console.log('toggleToken')
-    this.setState(prevState => ({
-      userToken:
-        prevState.userToken === null
-          ? 123
-          : null,
-    }));
+  setBitrixStatusHandler = (json) => {
+    this.setState({
+      bitrix_state: json,
+    });
   };
 
   componentDidMount() {
@@ -38,11 +34,11 @@ export default class App extends React.Component {
       <NavigationContainer>
         <Stack.Navigator>
         {
-          this.state.userToken == null ? ( 
+          this.state.bitrix_state == null ? ( 
           <Stack.Screen 
             name="SignIn" 
           >
-              {props => <SignInScreen {...props} toggleLoginStatus = { ()   => this.toggleToken() } />}
+              {props => <SignInScreen {...props} bitrixStatusHandler = { (json) => this.setBitrixStatusHandler(json) } />}
           </Stack.Screen>
           ) : ( 
           <Stack.Screen 
@@ -50,7 +46,7 @@ export default class App extends React.Component {
             options={{
               headerRight: () => (
                 <Button
-                  onPress={() => this.toggleToken()}
+                  onPress={() => this.setBitrixStatusHandler(null)}
                   title="Exit"
                   color="skyblue"
                 />
