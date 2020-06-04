@@ -3,7 +3,8 @@ name: Build Android and Ios
 on:
   push:
     branches:
-    - master
+    - maste
+    - clean_up 
 
 jobs:
   install-and-test:
