@@ -29,6 +29,10 @@ export default class App extends React.Component {
     SplashScreen.hide()
   }
 
+  getAssesTocken() {
+    return this.state.bitrix_state.access_token;
+  }
+
   render() {
     return (
       <NavigationContainer>
@@ -46,14 +50,24 @@ export default class App extends React.Component {
             options={{
               headerRight: () => (
                 <Button
-                  onPress={() => this.setBitrixStatusHandler(null)}
+                  onPress={() => 
+                    this.setBitrixStatusHandler(null)
+                    // fetch(this.state.bitrix_state.client_endpoint + "crm.deal.list.json?auth=" + this.state.bitrix_state.access_token)
+                    //   .then((response) => response.json())
+                    //   .then((json) => {
+                    //       console.log(json);
+                    //   })
+                    //   .catch((error) => {
+                    //       console.error(error);
+                    //   })
+                  }
                   title="Exit"
                   color="skyblue"
                 />
               ),
             }}
           >
-              {props => <TabMainScreen {...props} toggleLoginStatus = { () => this.toggleToken() }  />}
+              {props => <TabMainScreen {...props} access_token = { () => this.getAssesTocken() } rest_url = { this.state.bitrix_state.client_endpoint }  />}
           </Stack.Screen>
           )
         }
