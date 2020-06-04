@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master
+    - clean_up
 
 jobs:
   install-and-test:
