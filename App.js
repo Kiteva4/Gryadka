@@ -6,8 +6,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Button } from 'react-native'
 import TabMainScreen from './src/Screens/TabMainScreen'
 import SignInScreen from './src/Screens/SignInScreen'
+import requests from './src/Data/RequestsList.json'
+
 
 const Stack = createStackNavigator();
+const default_array = requests.data
 
 export default class App extends React.Component {
   
@@ -15,7 +18,8 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      bitrix_state: null
+      bitrix_state: null,
+      data: default_array
     };
   }
 
@@ -23,6 +27,18 @@ export default class App extends React.Component {
     this.setState({
       bitrix_state: json,
     });
+
+    fetch(json.client_endpoint + "crm.deal.list.json?auth=" + json.access_token)
+      .then((response) => response.json())
+      .then((json_data) => {
+        console.log(json_data)
+        this.setState({
+          data: json_data.result,
+        });
+      })
+      .catch((error) => {
+          console.error(error);
+      })
   };
 
   componentDidMount() {
@@ -52,14 +68,6 @@ export default class App extends React.Component {
                 <Button
                   onPress={() => 
                     this.setBitrixStatusHandler(null)
-                    // fetch(this.state.bitrix_state.client_endpoint + "crm.deal.list.json?auth=" + this.state.bitrix_state.access_token)
-                    //   .then((response) => response.json())
-                    //   .then((json) => {
-                    //       console.log(json);
-                    //   })
-                    //   .catch((error) => {
-                    //       console.error(error);
-                    //   })
                   }
                   title="Exit"
                   color="skyblue"
@@ -67,7 +75,7 @@ export default class App extends React.Component {
               ),
             }}
           >
-              {props => <TabMainScreen {...props} access_token = { () => this.getAssesTocken() } rest_url = { this.state.bitrix_state.client_endpoint }  />}
+              {props => <TabMainScreen {...props} data = { this.state.data }  />}
           </Stack.Screen>
           )
         }

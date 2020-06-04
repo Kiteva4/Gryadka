@@ -1,174 +1,164 @@
 {
     "data": [
         {
-            "id":0,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":1,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":1,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":2,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":2,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":3,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":3,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":4,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":4,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":5,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":5,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":6,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":6,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":7,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":7,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":8,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":8,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":9,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id": 9,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":10,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":10,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":11,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":11,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":12,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":12,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":13,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":13,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":14,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":14,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":15,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":15,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":16,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":16,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
-
+            "ID":17,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":17,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
-
+            "ID":18,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":18,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":19,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         },
         {
-            "id":19,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
-        },
-        {
-            "id":20,
-            "type": "тип работы",
-            "spec": "вид работы",
-            "address": "ул. Работы",
-            "client": "OOO Firma",
-            "date": "01.01.2021"
+            "ID":20,
+            "TYPE_ID": "тип работы",
+            "TITLE": "вид работы",
+            "COMPANY_ID": "ул. Работы",
+            "OPPORTUNITY": "OOO Firma",
+            "DATE_CREATE": "01.01.2021"
         }
     ]
 }

@@ -23,7 +23,7 @@ export default class TabMainScreen extends React.Component {
             >
                 <Tab.Screen
                     name="Поиск"
-                    component={SearchListScreen}
+                    //component={SearchListScreen}
                     options={{
                         tabBarLabel: 'Поиск',
                         tabBarIcon: ({ color }) => (
@@ -33,7 +33,9 @@ export default class TabMainScreen extends React.Component {
                                 size={28}
                             />),
                     }}
-                />
+                >
+                    {props => <SearchListScreen {...props} data = { this.props.data }  />}
+                </Tab.Screen>
                 <Tab.Screen
                     name="Предложения"
                     component={OffersListScreen}
