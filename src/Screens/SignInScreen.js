@@ -3,13 +3,8 @@ import { TextInput, View, Button, Text, StatusBar, Linking } from 'react-native'
 import { WebView } from 'react-native-webview';
 import { styles } from '../../Styles';
 
-// Сервер Аветика
-//const url = 'https://bxtest.bitrix24.ru/oauth/authorize/?client_id=local.5ecab2cc2333d2.46390240'
-//const url2 = 'https://bxtest.bitrix24.ru/oauth/token/?grant_type=authorization_code&client_id=local.5ecab2cc2333d2.46390240&client_secret=msh3utFIA4PQIKmMstMZTBBHKSjWYfwcl1rg63hEG1hEBXASoY&code='
-
-// Сервер Паши
-const url = 'https://b24-otft79.bitrix24.ru/oauth/authorize/?client_id=local.5ecab48db8b1f9.69187074'
-const url2 = 'https://b24-otft79.bitrix24.ru/oauth/token/?grant_type=authorization_code&client_id=local.5ecab48db8b1f9.69187074&client_secret=qQRPmRpBqJElmW2rJo3Od3uaZEWEzDo1dGakPDi7W2OMxAVRHz&code='
+const url = 'https://bxtest.bitrix24.ru/oauth/authorize/?client_id=local.5ecab2cc2333d2.46390240'
+const url2 = 'https://bxtest.bitrix24.ru/oauth/token/?grant_type=authorization_code&client_id=local.5ecab2cc2333d2.46390240&client_secret=msh3utFIA4PQIKmMstMZTBBHKSjWYfwcl1rg63hEG1hEBXASoY&code='
 
 export default class SignInScreen extends React.Component {
 
@@ -36,7 +31,7 @@ export default class SignInScreen extends React.Component {
                 params[match[1]] = match[2];
             }
 
-            fetch(url2 + params["code"])
+            const response = fetch(url2 + params["code"])
                 .then((response) => response.json())
                 .then((json) => {
                     console.log(json);
@@ -51,12 +46,11 @@ export default class SignInScreen extends React.Component {
     render() {
         return (
             this.state.isPressed ?
-            <WebView 
+            <WebView
+            userAgent={"Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3714.0 Mobile Safari/537.36"}
             ref={(ref) => { this.webview = ref; }}
             source={{ uri: url }}
             onNavigationStateChange={this.NavigationStateChange}
-            incognito={true}
-            userAgent={"Mozilla / 5.0 (Linux; U; ru-ru; Xoom Build / HRI39) AppleWebKit / 534.13 (KHTML, как Gecko) Версия / 4.0 Safari / 534.13"}
             /> 
             :
             <View style={styles.main_screen_container}>
