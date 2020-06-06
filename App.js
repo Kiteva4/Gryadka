@@ -45,10 +45,6 @@ export default class App extends React.Component {
     SplashScreen.hide()
   }
 
-  getAssesTocken() {
-    return this.state.bitrix_state.access_token;
-  }
-
   render() {
     return (
       <NavigationContainer>
@@ -66,16 +62,14 @@ export default class App extends React.Component {
             options={{
               headerRight: () => (
                 <Button
-                  onPress={() => 
-                    this.setBitrixStatusHandler(null)
-                  }
+                  onPress={() => this.setBitrixStatusHandler(null)}
                   title="Exit"
                   color="skyblue"
                 />
               ),
             }}
           >
-              {props => <TabMainScreen {...props} data = { this.state.data }  />}
+            {props => <TabMainScreen {...props} data = { this.state.data }  />}
           </Stack.Screen>
           )
         }

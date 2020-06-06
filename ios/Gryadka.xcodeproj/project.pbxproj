@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,47 +12,14 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		142BA76498432F5384F39314 /* libPods-Gryadka-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8732C150E2FEC0119FB96BF /* libPods-Gryadka-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* GryadkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GryadkaTests.m */; };
-		3B28A6A3DC6504FBCF09FA55 /* libPods-Gryadka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F79AD76317E8CA0897B0ED8F /* libPods-Gryadka.a */; };
-		6EA118D675324D33356F8AE9 /* libPods-Gryadka-GryadkaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 801873498BA7DEDC432A69E2 /* libPods-Gryadka-GryadkaTests.a */; };
-		C54A5EB9EA2CDD9350BBE63F /* libPods-Gryadka-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D377AB814A7B483D48F296 /* libPods-Gryadka-tvOS.a */; };
-		CB5981EB4BDCA822CB7FE6D5 /* libPods-Gryadka-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB48C3BCE2C1603DE93D5D97 /* libPods-Gryadka-tvOSTests.a */; };
-		CC544B362469BB57001EB3BE /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC544B352469BB57001EB3BE /* AppCenter-Config.plist */; };
-		CCD39776246D76A3008C6740 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39764246D76A3008C6740 /* Fontisto.ttf */; };
-		CCD39777246D76A3008C6740 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39764246D76A3008C6740 /* Fontisto.ttf */; };
-		CCD39778246D76A3008C6740 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39765246D76A3008C6740 /* Octicons.ttf */; };
-		CCD39779246D76A3008C6740 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39765246D76A3008C6740 /* Octicons.ttf */; };
-		CCD3977A246D76A3008C6740 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39766246D76A3008C6740 /* Feather.ttf */; };
-		CCD3977B246D76A3008C6740 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39766246D76A3008C6740 /* Feather.ttf */; };
-		CCD3977C246D76A3008C6740 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39767246D76A3008C6740 /* Entypo.ttf */; };
-		CCD3977D246D76A3008C6740 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39767246D76A3008C6740 /* Entypo.ttf */; };
-		CCD3977E246D76A3008C6740 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39768246D76A3008C6740 /* FontAwesome5_Brands.ttf */; };
-		CCD3977F246D76A3008C6740 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39768246D76A3008C6740 /* FontAwesome5_Brands.ttf */; };
-		CCD39780246D76A3008C6740 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39769246D76A3008C6740 /* MaterialCommunityIcons.ttf */; };
-		CCD39781246D76A3008C6740 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39769246D76A3008C6740 /* MaterialCommunityIcons.ttf */; };
-		CCD39782246D76A3008C6740 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976A246D76A3008C6740 /* AntDesign.ttf */; };
-		CCD39783246D76A3008C6740 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976A246D76A3008C6740 /* AntDesign.ttf */; };
-		CCD39784246D76A3008C6740 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976B246D76A3008C6740 /* Foundation.ttf */; };
-		CCD39785246D76A3008C6740 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976B246D76A3008C6740 /* Foundation.ttf */; };
-		CCD39786246D76A3008C6740 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976C246D76A3008C6740 /* Ionicons.ttf */; };
-		CCD39787246D76A3008C6740 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976C246D76A3008C6740 /* Ionicons.ttf */; };
-		CCD39788246D76A3008C6740 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976D246D76A3008C6740 /* FontAwesome5_Solid.ttf */; };
-		CCD39789246D76A3008C6740 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976D246D76A3008C6740 /* FontAwesome5_Solid.ttf */; };
-		CCD3978A246D76A3008C6740 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976E246D76A3008C6740 /* FontAwesome5_Regular.ttf */; };
-		CCD3978B246D76A3008C6740 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976E246D76A3008C6740 /* FontAwesome5_Regular.ttf */; };
-		CCD3978C246D76A3008C6740 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976F246D76A3008C6740 /* FontAwesome.ttf */; };
-		CCD3978D246D76A3008C6740 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD3976F246D76A3008C6740 /* FontAwesome.ttf */; };
-		CCD3978E246D76A3008C6740 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39770246D76A3008C6740 /* Zocial.ttf */; };
-		CCD3978F246D76A3008C6740 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39770246D76A3008C6740 /* Zocial.ttf */; };
-		CCD39790246D76A3008C6740 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39771246D76A3008C6740 /* EvilIcons.ttf */; };
-		CCD39791246D76A3008C6740 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39771246D76A3008C6740 /* EvilIcons.ttf */; };
-		CCD39792246D76A3008C6740 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39772246D76A3008C6740 /* SimpleLineIcons.ttf */; };
-		CCD39793246D76A3008C6740 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39772246D76A3008C6740 /* SimpleLineIcons.ttf */; };
-		CCD39794246D76A3008C6740 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39773246D76A3008C6740 /* MaterialIcons.ttf */; };
-		CCD39795246D76A3008C6740 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCD39773246D76A3008C6740 /* MaterialIcons.ttf */; };
+		6928CB5DE58F464F66A92CCD /* libPods-Gryadka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF043C99CE5BF4F6ADF5257 /* libPods-Gryadka.a */; };
+		A396B4DE2CDC7A1BBC17271E /* libPods-Gryadka-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3417A8A5F1B3ACB4BF9E19 /* libPods-Gryadka-tvOS.a */; };
+		BD4CF4750F58F08FD40C0D01 /* libPods-Gryadka-GryadkaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EE2581E4832AB1C8C2B857 /* libPods-Gryadka-GryadkaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +44,6 @@
 		00E356EE1AD99517003FC87E /* GryadkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GryadkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* GryadkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GryadkaTests.m; sourceTree = "<group>"; };
-		0C085F8B51E4D7012EF534BF /* Pods-Gryadka-GryadkaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-GryadkaTests.release.xcconfig"; path = "Target Support Files/Pods-Gryadka-GryadkaTests/Pods-Gryadka-GryadkaTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Gryadka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gryadka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Gryadka/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Gryadka/AppDelegate.m; sourceTree = "<group>"; };
@@ -85,40 +51,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Gryadka/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Gryadka/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Gryadka/main.m; sourceTree = "<group>"; };
-		24320D5A2C590FEE111C6B14 /* Pods-Gryadka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka.release.xcconfig"; path = "Target Support Files/Pods-Gryadka/Pods-Gryadka.release.xcconfig"; sourceTree = "<group>"; };
+		1C444E4F0CA7B1B03907D3E7 /* Pods-Gryadka-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOSTests/Pods-Gryadka-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E1BF116ECCB40DE2B33B4B9 /* Pods-Gryadka-GryadkaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-GryadkaTests.release.xcconfig"; path = "Target Support Files/Pods-Gryadka-GryadkaTests/Pods-Gryadka-GryadkaTests.release.xcconfig"; sourceTree = "<group>"; };
+		23BCF616DB9DC235F75C4E1D /* Pods-Gryadka-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOS/Pods-Gryadka-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Gryadka-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gryadka-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Gryadka-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gryadka-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5952EDC97F908B809B2B5F27 /* Pods-Gryadka-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOSTests/Pods-Gryadka-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		6D87EBDE9B5442FC00C3D81A /* Pods-Gryadka-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOSTests/Pods-Gryadka-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		801873498BA7DEDC432A69E2 /* libPods-Gryadka-GryadkaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka-GryadkaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A15B85A38E4D8F153D7B02A5 /* Pods-Gryadka-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOS/Pods-Gryadka-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		AB48C3BCE2C1603DE93D5D97 /* libPods-Gryadka-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA524AAEB92B0B3194DA05DF /* Pods-Gryadka-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOS/Pods-Gryadka-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		CC544B352469BB57001EB3BE /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
-		CCC3E67B247FC8D30048713D /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCC3E67D247FC9070048713D /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCD39764246D76A3008C6740 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
-		CCD39765246D76A3008C6740 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
-		CCD39766246D76A3008C6740 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
-		CCD39767246D76A3008C6740 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
-		CCD39768246D76A3008C6740 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
-		CCD39769246D76A3008C6740 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
-		CCD3976A246D76A3008C6740 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
-		CCD3976B246D76A3008C6740 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
-		CCD3976C246D76A3008C6740 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
-		CCD3976D246D76A3008C6740 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
-		CCD3976E246D76A3008C6740 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
-		CCD3976F246D76A3008C6740 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		CCD39770246D76A3008C6740 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
-		CCD39771246D76A3008C6740 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
-		CCD39772246D76A3008C6740 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
-		CCD39773246D76A3008C6740 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
-		D252E237E167C9D65CADF5CA /* Pods-Gryadka-GryadkaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-GryadkaTests.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka-GryadkaTests/Pods-Gryadka-GryadkaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EC579E8A214C8EB119204F6 /* Pods-Gryadka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka.release.xcconfig"; path = "Target Support Files/Pods-Gryadka/Pods-Gryadka.release.xcconfig"; sourceTree = "<group>"; };
+		3F0547444EF570681BA21CC7 /* Pods-Gryadka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka/Pods-Gryadka.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3417A8A5F1B3ACB4BF9E19 /* libPods-Gryadka-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A896D498098F1332EC6F4448 /* Pods-Gryadka-GryadkaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-GryadkaTests.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka-GryadkaTests/Pods-Gryadka-GryadkaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C107CA549742317FBC4C51E0 /* Pods-Gryadka-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOSTests/Pods-Gryadka-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4EE2581E4832AB1C8C2B857 /* libPods-Gryadka-GryadkaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka-GryadkaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4459902819B27AE5E2D7C7 /* Pods-Gryadka-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Gryadka-tvOS/Pods-Gryadka-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EF86C5945C5E0889736F157B /* Pods-Gryadka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gryadka.debug.xcconfig"; path = "Target Support Files/Pods-Gryadka/Pods-Gryadka.debug.xcconfig"; sourceTree = "<group>"; };
-		F3D377AB814A7B483D48F296 /* libPods-Gryadka-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F79AD76317E8CA0897B0ED8F /* libPods-Gryadka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF043C99CE5BF4F6ADF5257 /* libPods-Gryadka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8732C150E2FEC0119FB96BF /* libPods-Gryadka-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gryadka-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EA118D675324D33356F8AE9 /* libPods-Gryadka-GryadkaTests.a in Frameworks */,
+				BD4CF4750F58F08FD40C0D01 /* libPods-Gryadka-GryadkaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B28A6A3DC6504FBCF09FA55 /* libPods-Gryadka.a in Frameworks */,
+				6928CB5DE58F464F66A92CCD /* libPods-Gryadka.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54A5EB9EA2CDD9350BBE63F /* libPods-Gryadka-tvOS.a in Frameworks */,
+				A396B4DE2CDC7A1BBC17271E /* libPods-Gryadka-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5981EB4BDCA822CB7FE6D5 /* libPods-Gryadka-tvOSTests.a in Frameworks */,
+				142BA76498432F5384F39314 /* libPods-Gryadka-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,32 +136,15 @@
 			name = Gryadka;
 			sourceTree = "<group>";
 		};
-		14D7EE854B6372C79FB7C444 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF86C5945C5E0889736F157B /* Pods-Gryadka.debug.xcconfig */,
-				24320D5A2C590FEE111C6B14 /* Pods-Gryadka.release.xcconfig */,
-				D252E237E167C9D65CADF5CA /* Pods-Gryadka-GryadkaTests.debug.xcconfig */,
-				0C085F8B51E4D7012EF534BF /* Pods-Gryadka-GryadkaTests.release.xcconfig */,
-				A15B85A38E4D8F153D7B02A5 /* Pods-Gryadka-tvOS.debug.xcconfig */,
-				BA524AAEB92B0B3194DA05DF /* Pods-Gryadka-tvOS.release.xcconfig */,
-				6D87EBDE9B5442FC00C3D81A /* Pods-Gryadka-tvOSTests.debug.xcconfig */,
-				5952EDC97F908B809B2B5F27 /* Pods-Gryadka-tvOSTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCC3E67D247FC9070048713D /* libCocoaAsyncSocket.a */,
-				CCC3E67B247FC8D30048713D /* libCocoaAsyncSocket.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				F79AD76317E8CA0897B0ED8F /* libPods-Gryadka.a */,
-				801873498BA7DEDC432A69E2 /* libPods-Gryadka-GryadkaTests.a */,
-				F3D377AB814A7B483D48F296 /* libPods-Gryadka-tvOS.a */,
-				AB48C3BCE2C1603DE93D5D97 /* libPods-Gryadka-tvOSTests.a */,
+				EEF043C99CE5BF4F6ADF5257 /* libPods-Gryadka.a */,
+				D4EE2581E4832AB1C8C2B857 /* libPods-Gryadka-GryadkaTests.a */,
+				3F3417A8A5F1B3ACB4BF9E19 /* libPods-Gryadka-tvOS.a */,
+				F8732C150E2FEC0119FB96BF /* libPods-Gryadka-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,14 +159,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				CCD39763246D76A3008C6740 /* Fonts */,
-				CC544B352469BB57001EB3BE /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* Gryadka */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* GryadkaTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				14D7EE854B6372C79FB7C444 /* Pods */,
+				A805E6BE4689A5D71F266D9C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -253,28 +182,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCD39763246D76A3008C6740 /* Fonts */ = {
+		A805E6BE4689A5D71F266D9C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CCD39764246D76A3008C6740 /* Fontisto.ttf */,
-				CCD39765246D76A3008C6740 /* Octicons.ttf */,
-				CCD39766246D76A3008C6740 /* Feather.ttf */,
-				CCD39767246D76A3008C6740 /* Entypo.ttf */,
-				CCD39768246D76A3008C6740 /* FontAwesome5_Brands.ttf */,
-				CCD39769246D76A3008C6740 /* MaterialCommunityIcons.ttf */,
-				CCD3976A246D76A3008C6740 /* AntDesign.ttf */,
-				CCD3976B246D76A3008C6740 /* Foundation.ttf */,
-				CCD3976C246D76A3008C6740 /* Ionicons.ttf */,
-				CCD3976D246D76A3008C6740 /* FontAwesome5_Solid.ttf */,
-				CCD3976E246D76A3008C6740 /* FontAwesome5_Regular.ttf */,
-				CCD3976F246D76A3008C6740 /* FontAwesome.ttf */,
-				CCD39770246D76A3008C6740 /* Zocial.ttf */,
-				CCD39771246D76A3008C6740 /* EvilIcons.ttf */,
-				CCD39772246D76A3008C6740 /* SimpleLineIcons.ttf */,
-				CCD39773246D76A3008C6740 /* MaterialIcons.ttf */,
+				3F0547444EF570681BA21CC7 /* Pods-Gryadka.debug.xcconfig */,
+				2EC579E8A214C8EB119204F6 /* Pods-Gryadka.release.xcconfig */,
+				A896D498098F1332EC6F4448 /* Pods-Gryadka-GryadkaTests.debug.xcconfig */,
+				1E1BF116ECCB40DE2B33B4B9 /* Pods-Gryadka-GryadkaTests.release.xcconfig */,
+				23BCF616DB9DC235F75C4E1D /* Pods-Gryadka-tvOS.debug.xcconfig */,
+				DB4459902819B27AE5E2D7C7 /* Pods-Gryadka-tvOS.release.xcconfig */,
+				C107CA549742317FBC4C51E0 /* Pods-Gryadka-tvOSTests.debug.xcconfig */,
+				1C444E4F0CA7B1B03907D3E7 /* Pods-Gryadka-tvOSTests.release.xcconfig */,
 			);
-			name = Fonts;
-			path = "../node_modules/react-native-vector-icons/Fonts";
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GryadkaTests" */;
 			buildPhases = (
-				6D8059F4D6FC645A8FCFEFE5 /* [CP] Check Pods Manifest.lock */,
+				3E6E2BE95CF5F69C70ED4348 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				D465841C52F32BF7339E29BF /* [CP] Copy Pods Resources */,
+				096CCCFAC342D33810EC021C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,13 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Gryadka" */;
 			buildPhases = (
-				B355154F453896B8CDB3C5FC /* [CP] Check Pods Manifest.lock */,
+				1EBBBF0CE5582F7AA7BD4045 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				0331BAE9F69B3BAB1A22D044 /* [CP] Copy Pods Resources */,
+				9E4580AC239A160559351228 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Gryadka-tvOS" */;
 			buildPhases = (
-				FCD1059A873E38F45440076A /* [CP] Check Pods Manifest.lock */,
+				3602382BDE07BE118D26AB71 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -345,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Gryadka-tvOSTests" */;
 			buildPhases = (
-				140EFFB4283FC0B2194416F9 /* [CP] Check Pods Manifest.lock */,
+				1D075FFE20B70066A9C82A1B /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -373,7 +294,6 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 54HGJAN882;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -388,7 +308,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Gryadka" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -413,22 +333,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD39779246D76A3008C6740 /* Octicons.ttf in Resources */,
-				CCD39785246D76A3008C6740 /* Foundation.ttf in Resources */,
-				CCD39793246D76A3008C6740 /* SimpleLineIcons.ttf in Resources */,
-				CCD39787246D76A3008C6740 /* Ionicons.ttf in Resources */,
-				CCD39791246D76A3008C6740 /* EvilIcons.ttf in Resources */,
-				CCD3978B246D76A3008C6740 /* FontAwesome5_Regular.ttf in Resources */,
-				CCD3978F246D76A3008C6740 /* Zocial.ttf in Resources */,
-				CCD3977D246D76A3008C6740 /* Entypo.ttf in Resources */,
-				CCD39795246D76A3008C6740 /* MaterialIcons.ttf in Resources */,
-				CCD39783246D76A3008C6740 /* AntDesign.ttf in Resources */,
-				CCD39789246D76A3008C6740 /* FontAwesome5_Solid.ttf in Resources */,
-				CCD39777246D76A3008C6740 /* Fontisto.ttf in Resources */,
-				CCD3977B246D76A3008C6740 /* Feather.ttf in Resources */,
-				CCD39781246D76A3008C6740 /* MaterialCommunityIcons.ttf in Resources */,
-				CCD3977F246D76A3008C6740 /* FontAwesome5_Brands.ttf in Resources */,
-				CCD3978D246D76A3008C6740 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,25 +340,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD3978A246D76A3008C6740 /* FontAwesome5_Regular.ttf in Resources */,
-				CCD39778246D76A3008C6740 /* Octicons.ttf in Resources */,
-				CCD3977E246D76A3008C6740 /* FontAwesome5_Brands.ttf in Resources */,
-				CCD39786246D76A3008C6740 /* Ionicons.ttf in Resources */,
-				CCD39794246D76A3008C6740 /* MaterialIcons.ttf in Resources */,
-				CCD39788246D76A3008C6740 /* FontAwesome5_Solid.ttf in Resources */,
-				CCD39792246D76A3008C6740 /* SimpleLineIcons.ttf in Resources */,
-				CCD3977C246D76A3008C6740 /* Entypo.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				CCD39782246D76A3008C6740 /* AntDesign.ttf in Resources */,
-				CCD3978E246D76A3008C6740 /* Zocial.ttf in Resources */,
-				CCD39784246D76A3008C6740 /* Foundation.ttf in Resources */,
-				CCD3977A246D76A3008C6740 /* Feather.ttf in Resources */,
-				CCD39790246D76A3008C6740 /* EvilIcons.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				CCD3978C246D76A3008C6740 /* FontAwesome.ttf in Resources */,
-				CCD39776246D76A3008C6740 /* Fontisto.ttf in Resources */,
-				CCD39780246D76A3008C6740 /* MaterialCommunityIcons.ttf in Resources */,
-				CC544B362469BB57001EB3BE /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,137 +375,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		0331BAE9F69B3BAB1A22D044 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Gryadka/Pods-Gryadka-resources.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gryadka/Pods-Gryadka-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		140EFFB4283FC0B2194416F9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Gryadka-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		6D8059F4D6FC645A8FCFEFE5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Gryadka-GryadkaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B355154F453896B8CDB3C5FC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Gryadka-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D465841C52F32BF7339E29BF /* [CP] Copy Pods Resources */ = {
+		096CCCFAC342D33810EC021C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -666,7 +425,65 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gryadka-GryadkaTests/Pods-Gryadka-GryadkaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCD1059A873E38F45440076A /* [CP] Check Pods Manifest.lock */ = {
+		1D075FFE20B70066A9C82A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gryadka-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EBBBF0CE5582F7AA7BD4045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gryadka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3602382BDE07BE118D26AB71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -686,6 +503,76 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6E2BE95CF5F69C70ED4348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gryadka-GryadkaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4580AC239A160559351228 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gryadka/Pods-Gryadka-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gryadka/Pods-Gryadka-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -793,21 +680,16 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D252E237E167C9D65CADF5CA /* Pods-Gryadka-GryadkaTests.debug.xcconfig */;
+			baseConfigurationReference = A896D498098F1332EC6F4448 /* Pods-Gryadka-GryadkaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GryadkaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -821,18 +703,13 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C085F8B51E4D7012EF534BF /* Pods-Gryadka-GryadkaTests.release.xcconfig */;
+			baseConfigurationReference = 1E1BF116ECCB40DE2B33B4B9 /* Pods-Gryadka-GryadkaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GryadkaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -846,73 +723,18 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF86C5945C5E0889736F157B /* Pods-Gryadka.debug.xcconfig */;
+			baseConfigurationReference = 3F0547444EF570681BA21CC7 /* Pods-Gryadka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 54HGJAN882;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Gryadka/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"/**",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBReactNativeSpec\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-DoubleConversion\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-Folly\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-Glog\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-PeerTalk\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-RSocket\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlipperKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Folly\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCMaskedView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNGestureHandler\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNReanimated\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNScreens\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNSearchBar\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNVectorIcons\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/appcenter-analytics\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/appcenter-core\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/appcenter-crashes\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-maps\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-safe-area-context\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-splash-screen\"",
-					"\"${PODS_ROOT}/CocoaLibEvent/lib\"",
-					"\"${PODS_ROOT}/OpenSSL-Universal/ios/lib\"",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -928,19 +750,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24320D5A2C590FEE111C6B14 /* Pods-Gryadka.release.xcconfig */;
+			baseConfigurationReference = 2EC579E8A214C8EB119204F6 /* Pods-Gryadka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 54HGJAN882;
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Gryadka/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -955,7 +771,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A15B85A38E4D8F153D7B02A5 /* Pods-Gryadka-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 23BCF616DB9DC235F75C4E1D /* Pods-Gryadka-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -966,12 +782,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Gryadka-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -987,7 +799,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA524AAEB92B0B3194DA05DF /* Pods-Gryadka-tvOS.release.xcconfig */;
+			baseConfigurationReference = DB4459902819B27AE5E2D7C7 /* Pods-Gryadka-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -998,12 +810,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Gryadka-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1019,7 +827,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D87EBDE9B5442FC00C3D81A /* Pods-Gryadka-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = C107CA549742317FBC4C51E0 /* Pods-Gryadka-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1029,13 +837,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Gryadka-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1051,7 +854,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5952EDC97F908B809B2B5F27 /* Pods-Gryadka-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 1C444E4F0CA7B1B03907D3E7 /* Pods-Gryadka-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1061,13 +864,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Gryadka-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1129,10 +927,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
@@ -1185,10 +980,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
