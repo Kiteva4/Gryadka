@@ -48,26 +48,26 @@ jobs:
         with:
           name: release
           path: android/app/build/outputs/apk/release/app-release-signed.apk
-  build-ios:
-    name: Build IOS
-    needs: install-and-test
-    runs-on: [self-hosted]
-    steps: 
-      - uses: actions/checkout@v2
-      - name: Install npm dependencies
-        run: |
-          npm install
-      - name: Install pod dependencies
-        run: |
-          cd ios && pod install
-      - name: Build app
-        run: |       
-          xcodebuild -workspace ios/Gryadka.xcworkspace -scheme Gryadka archive -archivePath Gryadka.xcarchive -allowProvisioningUpdates
-          xcodebuild -exportArchive -archivePath ./Gryadka.xcarchive -exportPath . -exportOptionsPlist ios/Gryadka/Info.plist
-          mkdir ios/build/
-          mv Gryadka.ipa ios/build
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: Gryadka.ipa
-          path: ios/build/
+#   build-ios:
+#     name: Build IOS
+#     needs: install-and-test
+#     runs-on: [self-hosted]
+#     steps: 
+#       - uses: actions/checkout@v2
+#       - name: Install npm dependencies
+#         run: |
+#           npm install
+#       - name: Install pod dependencies
+#         run: |
+#           cd ios && pod install
+#       - name: Build app
+#         run: |       
+#           xcodebuild -workspace ios/Gryadka.xcworkspace -scheme Gryadka archive -archivePath Gryadka.xcarchive -allowProvisioningUpdates
+#           xcodebuild -exportArchive -archivePath ./Gryadka.xcarchive -exportPath . -exportOptionsPlist ios/Gryadka/Info.plist
+#           mkdir ios/build/
+#           mv Gryadka.ipa ios/build
+#       - name: Upload Artifact
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: Gryadka.ipa
+#           path: ios/build/
