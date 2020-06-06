@@ -48,13 +48,13 @@ jobs:
           cd android/app/build/outputs/apk/release
           ls -la
           mkdir artifacts
-          mv ./app-release-signed.apk ./artifacts/release.apk
+          cp -R ./app-release-signed.apk ./artifacts/
           cd artifacts
           ls -la
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2.0.1
         with:
-          name: apk
+          name: release
           path: android/app/build/outputs/apk/release/artifacts/
   build-ios:
     name: Build IOS
