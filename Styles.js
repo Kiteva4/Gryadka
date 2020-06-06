@@ -39,10 +39,12 @@ export const stl_rqst_row = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'space-between',
     margin: 2,
+    marginRight: 10
   },
   requestRowIDText: {
     fontSize: 18,
     fontWeight: 'bold',
+    padding: 5
   },
   requestRowAdressText: {
     textAlign: 'left',
@@ -53,6 +55,7 @@ export const stl_rqst_row = StyleSheet.create({
   requestRowDateText: {
     fontSize: 14,
     color: 'grey',
+    padding: 5
   },
   requestRowCompanyText: {
     fontSize: 18,
@@ -60,12 +63,15 @@ export const stl_rqst_row = StyleSheet.create({
     textAlign: 'right',
     textAlignVertical: 'center',
     color: 'grey',
+    padding: 5
   },
   requestRowSpecText: {
     color: 'grey',
     textAlign: 'right',
     textAlignVertical: 'center',
     fontWeight: 'bold',
+    padding: 5
+
   },
   requestRowTypeText: {
     fontSize: 14,
@@ -73,5 +79,6 @@ export const stl_rqst_row = StyleSheet.create({
     textAlignVertical: 'center',
     fontWeight: 'bold',
     color: '#56CCF2',
+    padding: 5
   },
 });
