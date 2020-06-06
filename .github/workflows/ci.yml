@@ -43,11 +43,19 @@ jobs:
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
+      - name: TestFiles
+        run: |
+          cd android/app/build/outputs/apk/release
+          ls -la
+          mkdir artifacts
+          mv ./app-release-unsigned-signed.apk ./artifacts/release.apk
+          cd artifacts
+          ls -la
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
           name: apk
-          path: android/app/build/outputs/apk/release/app-release-unsigned-signed.apk
+          path: android/app/build/outputs/apk/release/artifacts/
   build-ios:
     name: Build IOS
     needs: install-and-test
