@@ -11,7 +11,7 @@ jobs:
     # Job name 'is Install and test'
     name: Install and test
     # This job runs on Linux
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     steps:
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
     name: Build Android
     needs: install-and-test
     # This job runs on Linux
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
