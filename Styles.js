@@ -39,12 +39,12 @@ export const stl_rqst_row = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'space-between',
     margin: 2,
-    marginRight: 10
+    marginRight: 10,
   },
   requestRowIDText: {
     fontSize: 18,
     fontWeight: 'bold',
-    padding: 5
+    padding: 5,
   },
   requestRowAdressText: {
     textAlign: 'left',
@@ -55,7 +55,7 @@ export const stl_rqst_row = StyleSheet.create({
   requestRowDateText: {
     fontSize: 14,
     color: 'grey',
-    padding: 5
+    padding: 5,
   },
   requestRowCompanyText: {
     fontSize: 18,
@@ -63,15 +63,14 @@ export const stl_rqst_row = StyleSheet.create({
     textAlign: 'right',
     textAlignVertical: 'center',
     color: 'grey',
-    padding: 5
+    padding: 5,
   },
   requestRowSpecText: {
     color: 'grey',
     textAlign: 'right',
     textAlignVertical: 'center',
     fontWeight: 'bold',
-    padding: 5
-
+    padding: 5,
   },
   requestRowTypeText: {
     fontSize: 14,
@@ -79,6 +78,75 @@ export const stl_rqst_row = StyleSheet.create({
     textAlignVertical: 'center',
     fontWeight: 'bold',
     color: '#56CCF2',
-    padding: 5
+    padding: 5,
+  },
+});
+
+export const stl_rqst_screen = StyleSheet.create({
+  screen_contaienr: {
+    flex: 1,
+    alignItems: 'stretch',
+    justifyContent: 'flex-start',
+    backgroundColor: 'white',
+  },
+  params_block_container: {
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    justifyContent: 'center',
+    paddingBottom: 25
+  },
+  param_description_container: {
+    alignItems: 'flex-start',
+    justifyContent: 'space-around',
+    flex: 1,
+    minHeight: 150,
+    marginLeft: 45,
+  },
+  param_value_container: {
+    flex: 2,
+    minHeight: 150,
+    alignItems: 'flex-start',
+    justifyContent: 'space-around',
+    marginLeft: 10,
+  },
+  description_text: {
+    fontSize: 12,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    color: 'gray',
+    textAlign: 'left',
+  },
+  id_text: {
+    fontSize: 24,
+    textAlignVertical: 'center',
+    padding: 25
+  },
+  status_text: {
+    fontSize: 14,
+    textAlignVertical: 'center',
+
+  },
+  type_text: {
+    fontSize: 14,
+    textAlignVertical: 'center',
+  },
+  spec_text: {
+    fontSize: 14,
+    textAlignVertical: 'center',
+    // maxWidth: 275
+  },
+  client_text: {
+    fontSize: 14,
+    textAlignVertical: 'center',
+  },
+  adress_text: {
+    fontSize: 14,
+    textAlignVertical: 'center',
+    fontWeight: 'bold',
+    color: '#2F80ED'
+  },
+  date_text: {
+    fontSize: 14,
+    textAlignVertical: 'center',
   },
 });
