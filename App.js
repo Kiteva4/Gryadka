@@ -3,7 +3,7 @@ import {NavigationContainer, StackActions} from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {Button} from 'react-native';
+import {Button, AsyncStorage} from 'react-native';
 import TabMainScreen from './src/Screens/TabMainScreen';
 import SignInScreen from './src/Screens/SignInScreen';
 import RequestScreen from './src/Screens/RequestScreen';
@@ -16,6 +16,9 @@ const default_array = requests.data;
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+
+    // AsyncStorage.getItem("refresh_token")
+    //   .then((refresh_token) => {  })
 
     this.state = {
       bitrix_state: null,
