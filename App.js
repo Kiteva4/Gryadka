@@ -50,7 +50,7 @@ export default class App extends React.Component {
 
   render() {
     // DEBUG
-    return this.state.bitrix_state !== null ? (
+    return this.state.bitrix_state == null ? (
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="SignIn">
