@@ -3,14 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_bg"
+    android:background="@drawable/background_splash"
     android:gravity="center">
-
-    <ImageView
-        android:layout_width="240dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="Splash_icon"
-        android:src="@mipmap/splash_icon" 
-    />
 </LinearLayout>
