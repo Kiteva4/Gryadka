@@ -39,8 +39,6 @@ export default class App extends React.Component {
         server_data.client_secret)
 
       const json_data = await response.json()
-
-      console.log(json_data)
   
       this.setBitrixStatusHandler(json_data);
     }
@@ -65,7 +63,6 @@ export default class App extends React.Component {
     fetch(json.client_endpoint + 'crm.deal.list.json?auth=' + json.access_token)
       .then((response) => response.json())
       .then((json_data) => {
-        console.log(json_data);
         this.setState({
           data: json_data.result,
         });

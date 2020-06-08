@@ -5,42 +5,37 @@ import {styles} from '../../Styles';
 
 import server_data from '../Data/ServerData.json';
 
-const url =
-  'https://' +
-  server_data.domain +
-  '/oauth/authorize/?client_id=' +
-  server_data.client_id;
-const url2 =
-  'https://' +
-  server_data.domain +
-  '/oauth/token/?grant_type=authorization_code&client_id=' +
-  server_data.client_id +
-  '&client_secret=' +
-  server_data.client_secret +
-  '&code=';
-const url3 =
-  'https://' +
-  server_data.domain +
-  '/oauth/authorize/?state=&client_id=l' +
-  server_data.client_id;
-
 export default class SignInScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      url: url,
+      url: this.url_auth[this.current_url_auth],
     };
+  }
+
+  url_auth = [
+    'https://' + server_data.domain + '/oauth/authorize/?client_id=' + server_data.client_id,
+    'https://' + server_data.domain + '/oauth/authorize/?state=&client_id=l' + server_data.client_id
+  ]
+  current_url_auth = 0;
+
+  url_token = 'https://' + server_data.domain + '/oauth/token/?grant_type=authorization_code&client_id=' +
+  server_data.client_id + '&client_secret=' + server_data.client_secret + '&code=';
+
+  SwitchAuthUrl = () => {
+    this.current_url_auth = ++this.current_url_auth % 2;
+    this.setState({
+      url: this.url_auth[this.current_url_auth],
+    });
   }
 
   handleLogIn = json => {
     this.props.bitrixStatusHandler(json);
   };
 
-  NavigationStateChange = event => {
+  NavigationStateChange = (event) => {
     const regex_url = /test.gryadka.info/g;
     const oauth_with_other_url = /https:\/\/auth2.bitrix24.net\/bitrix\/tools\/oauth\/.+code=/g;
-
-    console.log(event.url);
 
     if (regex_url.exec(event.url)) {
       this.webview.stopLoading();
@@ -52,7 +47,7 @@ export default class SignInScreen extends React.Component {
         params[match[1]] = match[2];
       }
 
-      const response = fetch(url2 + params['code'])
+      const response = fetch(this.url_token + params['code'])
         .then(response => response.json())
         .then(json => {
           console.log(json);
@@ -61,16 +56,15 @@ export default class SignInScreen extends React.Component {
         .catch(error => {
           console.error(error);
         });
-    } else if (oauth_with_other_url.exec(event.url)) {
-      console.log('Здесь все работает');
-
+    } else if (oauth_with_other_url.exec(event.url) && !event.loading) {
       setTimeout(() => {
-        this.setState({
-          url: url3,
-        });
+        this.SwitchAuthUrl()
       }, 1000);
     }
   };
+
+  onError = (error) => {
+  }
 
   render() {
     return (
@@ -81,9 +75,14 @@ export default class SignInScreen extends React.Component {
         ref={ref => {
           this.webview = ref;
         }}
-        source={{uri: this.state.url}}
+        source={{
+          uri: this.state.url,
+        }}
         incognito={true}
         onNavigationStateChange={this.NavigationStateChange}
+        onError={this.onError}
+        domStorageEnabled = {true}
+        javaScriptEnabled = {true}
       />
     );
   }
