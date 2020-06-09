@@ -9,7 +9,9 @@ export default class SignInScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      url: this.url_auth[this.current_url_auth],
+      source : {
+        uri: this.url_auth[this.current_url_auth],
+      }, 
     };
   }
 
@@ -22,10 +24,12 @@ export default class SignInScreen extends React.Component {
   url_token = 'https://' + server_data.domain + '/oauth/token/?grant_type=authorization_code&client_id=' +
   server_data.client_id + '&client_secret=' + server_data.client_secret + '&code=';
 
-  SwitchAuthUrl = () => {
+  ChangeToAuthUrl = () => {
     this.current_url_auth = ++this.current_url_auth % 2;
     this.setState({
-      url: this.url_auth[this.current_url_auth],
+      source: {
+        uri: this.url_auth[this.current_url_auth],
+      },
     });
   }
 
@@ -47,7 +51,7 @@ export default class SignInScreen extends React.Component {
         params[match[1]] = match[2];
       }
 
-      const response = fetch(this.url_token + params['code'])
+      fetch(this.url_token + params['code'])
         .then(response => response.json())
         .then(json => {
           console.log(json);
@@ -56,14 +60,29 @@ export default class SignInScreen extends React.Component {
         .catch(error => {
           console.error(error);
         });
-    } else if (oauth_with_other_url.exec(event.url) && !event.loading) {
+    } 
+    else if (oauth_with_other_url.exec(event.url) && !event.loading) {
       setTimeout(() => {
-        this.SwitchAuthUrl()
+        this.ChangeToAuthUrl()
       }, 1000);
     }
   };
 
   onError = (error) => {
+    const android_url = "file:///android_asset/NotFound.html"
+    const source_error = Platform.OS === 'ios' 
+      ? require('../assets/NotFound.html') 
+      : { uri: android_url }
+
+    if ((source_error == this.state.source && Platform.OS === 'ios') 
+        || this.state.source.uri == android_url ) {
+      this.webview.goBack();
+    }
+    else {
+      this.setState({
+        source: source_error,
+      });
+    }
   }
 
   render() {
@@ -75,9 +94,7 @@ export default class SignInScreen extends React.Component {
         ref={ref => {
           this.webview = ref;
         }}
-        source={{
-          uri: this.state.url,
-        }}
+        source={this.state.source}
         incognito={true}
         onNavigationStateChange={this.NavigationStateChange}
         onError={this.onError}
