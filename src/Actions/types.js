@@ -1,0 +1,6 @@
+export const REQUEST_LOGIN     = 'REQUEST_LOGIN'
+export const LOGIN_SUCSESS     = 'LOGIN_SUCSESS'
+export const LOGIN_FAILURE     = 'LOGIN_FAILURE'
+export const REQUEST_DATA      = 'REQUEST_DATA'
+export const NEW_DATA_SUCSESS  = 'NEW_DATA_SUCSESS'
+export const NEW_DATA_FAILURE  = 'NEW_DATA_FAILURE'

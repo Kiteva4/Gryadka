@@ -24,7 +24,10 @@
     "react-native-search-bar": "^3.5.1",
     "react-native-splash-screen": "^3.2.0",
     "react-native-vector-icons": "^6.6.0",
-    "react-native-webview": "10.1.1"
+    "react-native-webview": "10.1.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.10.2",
