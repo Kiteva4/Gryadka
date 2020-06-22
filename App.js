@@ -79,20 +79,14 @@ export default class App extends React.Component {
   render() {
     // DEBUG
     return this.state.bitrix_state == null ? (
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="SignIn">
-            {(props) => (
-              <SignInScreen
-                {...props}
-                bitrixStatusHandler={(json) =>
-                  this.setBitrixStatusHandler(json)
-                }
-              />
-            )}
-          </Stack.Screen>
-        </Stack.Navigator>
-      </NavigationContainer>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen 
+              name = "SignIn"
+              component = {SignInScreen}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
     ) : (
       <NavigationContainer>
         <Stack.Navigator>

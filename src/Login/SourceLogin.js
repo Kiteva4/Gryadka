@@ -44,6 +44,6 @@ class SourceLoginBirtix {
     }
 }
 
-const login = new sourceLogin();
+const login = new SourceLoginBirtix();
 
 export default login;
