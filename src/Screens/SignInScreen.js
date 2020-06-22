@@ -1,9 +1,7 @@
 import * as React from 'react';
-import {TextInput, View, Button, Text, StatusBar, Linking} from 'react-native';
 import {WebView} from 'react-native-webview';
 import {styles} from '../../Styles';
 
-import store from '../Store'
 import {connect} from 'react-redux'
 import {request_login, navigation_state_change, login_failure} from '../Actions/login'
 
@@ -11,15 +9,15 @@ class SignInScreen extends React.Component {
   constructor(props) {
     super(props);
     
-    store.dispatch(request_login())
+    this.props.request_login()
   }
 
   NavigationStateChange = event => {
-    store.dispatch(navigation_state_change(event.url))
+    //this.props.navigation_state_change(event.url)
   }
 
   onError = error => {
-    store.dispatch(login_failure(error))
+    this.props.login_failure(error)
   }
 
   render() {
@@ -31,7 +29,8 @@ class SignInScreen extends React.Component {
         ref = {ref => {
           this.webview = ref;
         }}
-        source = {this.props.webview_source}
+        source = {this.props.login.webview_source}
+        //source = {{"uri": "https://b24-otft79.bitrix24.ru/oauth/authorize/?client_id=local.5ecab48db8b1f9.69187074"}}
         incognito = {true}
         onNavigationStateChange = {this.NavigationStateChange}
         onError = {this.onError}
@@ -42,8 +41,16 @@ class SignInScreen extends React.Component {
   }
 }
 
-const GetStateLogin = state => ({
-  login: state.login,
-})
+const mapStateToProps = state => {
+  return {
+    login: state.login,
+  }
+}
 
-export default connect(GetStateLogin)(SignInScreen)
+const mapDispatchToProps = {
+  request_login: request_login,
+  navigation_state_change: navigation_state_change,
+  login_failure: login_failure,
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignInScreen)

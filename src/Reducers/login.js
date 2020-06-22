@@ -1,4 +1,4 @@
-import {REQUEST_TO_LOGIN, LOGIN_IS_SUCSESS, LOGIN_IS_FAILURE} from '../Actions/types'
+import {REQUEST_LOGIN, LOGIN_SUCSESS, LOGIN_FAILURE} from '../Actions/types'
 
 import login from '../Login/SourceLogin'
 
@@ -11,12 +11,12 @@ const initialLoginState = {
 
 const loginReducer = (state = initialLoginState, action) => {
     switch(action.type) {
-    case REQUEST_TO_LOGIN:
+    case REQUEST_LOGIN:
         return {
             ...state,
             webview_source: login.GetCorrectSource(),
         };
-    case LOGIN_IS_SUCSESS:
+    case LOGIN_SUCSESS:
         return {
             ...state,
             refresh_token: action.payload.refresh_token,
@@ -24,7 +24,7 @@ const loginReducer = (state = initialLoginState, action) => {
             expires: action.payload.expires,
             webview_source: null,
         };
-    case LOGIN_IS_FAILURE:
+    case LOGIN_FAILURE:
         return {
             ...state,
             webview_source: login.GetErrorSource(action.payload),

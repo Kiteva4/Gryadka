@@ -23,16 +23,12 @@ class SourceLoginBirtix {
 
     GetCorrectSource = () => {
         return {
-            source: {
-              uri: GetAuthUrl(_current_url_auth++ % url_auth.length),
-            },
+            uri: GetAuthUrl(this._current_url_auth++ % url_auth.length),
         }
     }
 
     GetErrorSource = error => {
-        return {
-            source: source_error,
-        }
+        return source_error
     }
 
     GetUrlTocken = () => {
