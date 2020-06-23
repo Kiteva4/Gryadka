@@ -8,22 +8,23 @@ export const request_login = () => {
     }
 }
 
-export const navigation_state_change = event => {
-    dispatch => {
+export const navigation_state_change = url => {
+    return dispatch => {
         const regex_url = new RegExp(login.GetRedirectUrl(), "g")
         const oauth_with_other_url = /https:\/\/auth2.bitrix24.net\/bitrix\/tools\/oauth\/.+code=/g;
 
-        if (regex_url.exec(event.url)) {
+        
+        if (regex_url.exec(url)) {
             //this.webview.stopLoading();
 
-            const params = GetParamsUrlGetRequest()
+            const params = GetParamsUrlGetRequest(url)
 
             fetch(login.GetUrlTocken() + params['code'])
                 .then(response => response.json())
                 .then(json => dispatch(login_sucsess(json)))
                 .catch(error => dispatch(login_failure(error)))
         } 
-        else if (oauth_with_other_url.exec(event.url) && !event.loading) {
+        else if (oauth_with_other_url.exec(url)) {
             setTimeout(() => dispatch(request_login()), 1000);
         }
     }

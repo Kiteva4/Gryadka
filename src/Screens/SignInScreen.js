@@ -13,7 +13,7 @@ class SignInScreen extends React.Component {
   }
 
   NavigationStateChange = event => {
-    //this.props.navigation_state_change(event.url)
+    this.props.navigation_state_change(event.url)
   }
 
   onError = error => {
@@ -30,7 +30,6 @@ class SignInScreen extends React.Component {
           this.webview = ref;
         }}
         source = {this.props.login.webview_source}
-        //source = {{"uri": "https://b24-otft79.bitrix24.ru/oauth/authorize/?client_id=local.5ecab48db8b1f9.69187074"}}
         incognito = {true}
         onNavigationStateChange = {this.NavigationStateChange}
         onError = {this.onError}
