@@ -5,6 +5,7 @@ on:
     branches:
     - master
     - clean_up
+    - redux
 
 jobs:
   install-and-test:
